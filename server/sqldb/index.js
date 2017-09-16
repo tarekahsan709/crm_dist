@@ -19,25 +19,25 @@ var _sequelize2 = _interopRequireDefault(_sequelize);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //
-// var db = {
-//   Sequelize,
-//   sequelize: new Sequelize('CRM', 'root', '1234567Asd#', {
-//     host: 'localhost',
-//     dialect: 'mysql',
-//
-//     pool: {
-//       max: 5,
-//       min: 0,
-//       idle: 10000
-//     }
-//   })
-// };
+var db = {
+  Sequelize,
+  sequelize: new Sequelize('CRM', 'root', 'user', {
+    host: 35.188.197.18,
+    dialect: 'mysql',
+
+    pool: {
+      max: 5,
+      min: 0,
+      idle: 10000
+    }
+  })
+};
 
 // for local at home
-var db = {
-    Sequelize: _sequelize2.default,
-    sequelize: new _sequelize2.default(_environment2.default.sequelize.uri, _environment2.default.sequelize.options)
-};
+// var db = {
+//     Sequelize: _sequelize2.default,
+//     sequelize: new _sequelize2.default(_environment2.default.sequelize.uri, _environment2.default.sequelize.options)
+// };
 // for local at home
 
 db.sequelize.authenticate().then(function (err) {
