@@ -12,7 +12,7 @@ module.exports = {
   port: process.env.OPENSHIFT_NODEJS_PORT || process.env.port || 8080,
 
   sequelize: {
-    uri: 'mysql://root:user@127.0.0.1:3306/CRM',
+    uri: 'mysql://root:user@35.188.197.18/CRM',
     options: {
       logging: false,
       define: {
