@@ -9,7 +9,7 @@ module.exports = {
   ip: process.env.OPENSHIFT_NODEJS_IP || process.env.ip || undefined,
 
   // Server port
-  port: process.env.OPENSHIFT_NODEJS_PORT || process.env.port || 8000,
+  port: process.env.OPENSHIFT_NODEJS_PORT || process.env.port || 8080,
 
   sequelize: {
     uri: 'mysql://root:user@127.0.0.1:3306/CRM',
